@@ -7,3 +7,7 @@ elif temperature > 60:
 else:
     print("It's so cool")
 print("Ending")
+
+a = None
+if not a:
+    print('a is False')

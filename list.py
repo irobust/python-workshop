@@ -19,10 +19,8 @@ for country in countries:
 print(countries[::-1])
 countries.reverse()
 countries.sort(reverse=True)
-countries.sort(key=getLength)
+countries.sort(key=len)
 pass
 
 # for i in range(len(countries)):
 #     print(countries[i])
-
-
