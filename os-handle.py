@@ -2,6 +2,15 @@ try:
     import termios
     import tty
     import sys
+
+    def getkey():
+        termios.get()
+
 except ImportError as e:
     import msvcrt
-    print(e)
+    
+    def getkey():
+        msvcrt.getch()
+
+finally:
+    getkey()
