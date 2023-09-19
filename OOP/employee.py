@@ -1,6 +1,6 @@
 class Employee:
     def __init__(self, **args):
-        self._firstname = args['firstname']
+        self._firstname = args['firstname'] if 'firstname' in args else ''
         self._lastname = args['lastname']
     
     @property
